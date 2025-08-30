@@ -1,0 +1,26 @@
+<div class="modal fade" id="aUsuarioAtdo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form method="POST">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Autorizar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label>Cedula</label>
+                        <input type="number" class="form-control" name="cedula" required>
+                    </div>
+                    <div class="mb-3">
+                        <label>Rnt</label>
+                        <input type="number" class="form-control" name="rnt" >
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" name="accion" value="add" class="btn btn-success">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ===== Colors =======*/
+    --body-color: #eceff8;
+    --sidebar-color: #42b94e;
+    --primary-color:#F6F5FF;
+    --primary-color-light: rgb(78, 194, 61);
+    --toggle-color:#DDD;
+    --text-color:#707070;
+    --text-color2:#F6F5FF;
+
+
+    /* ===== Transitions =======*/
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color) !important;
+}
+
+
+
+.cursor {
+    cursor: pointer;
+}
+
+.link-header {}
+
+.link-header:hover {
+  color: white !important;
+}
+
+/*css para la cabecera*/
+.caja-morada {
+    color: white;
+    display: flex;
+    width: 40px;
+    background-color: purple;
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.caja-usuario {
+    display: flex;
+    align-items: center;
+}
+
+.usuario-datos {
+    color: white;
+}
+
+/* css para realada.php */
+.margen-carta {
+    margin-bottom: 10px;
+}
+
+.card-click {
+    cursor: pointer;
+}
+
+.card-click:hover {
+    box-shadow: 2px 2px 5px #999;
+}
+
+.caja-detalles {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-bold {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.text-gray {
+    font-size: 13px;
+    color: #626161;
+}
+
+.caja-titulo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.titulo-text {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.box-status-icon-t-r {
+    font-weight: 500;
+    text-align: center;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+.caja-general {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.sub-caja-general {
+    width: 90%;
+}
+
+.titulo-t-r {
+    text-transform: uppercase !important;
+}
+
+.top-card {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-box-top-card {
+    width: 80% !important;
+}
+
+.width-35-porcent {
+    width: 35%;
+}
+
+.caja-fechas-detalles {
+    margin-bottom: 1%;
+}

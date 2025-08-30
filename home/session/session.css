@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+:root {
+    --primary-color1:#33CEFF;
+    --secondary-color1: #131086; 
+    --primary-color2: #575757;
+    --secondary-color2: #110E0E; 
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding: 40px;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-button:increment {
+    display: none;
+} 
+
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
+body::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #989696;
+    border: 2px solid #989696;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #69d2f3;
+    border: 2px solid #69d2f3;
+}
+
+.body1 {
+    background: linear-gradient(45deg, var(--primary-color1), var(--secondary-color1));
+}
+
+.body2 {
+    background: linear-gradient(45deg, var(--secondary-color2), var(--primary-color2));
+}
+
+.header{
+    display: grid;
+    margin-top: 2%;
+}
+
+.icon {
+    color: black;
+    margin-left: 6px;
+    margin-right: 700px;
+       
+}
+
+.title {
+    font-weight: bold;
+}
+
+.container {
+    min-height: calc(100vh - 40px * 2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.login-right {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+.login-right img{
+    width: 100%;
+}
+
+.login-header {
+    margin-bottom: 25px;
+}
+
+.login-header h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.login-header p{
+    opacity: .7;
+}
+
+.login-form {
+    width: 450px;
+}
+
+.login-form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-item {
+    padding-bottom: 30px;
+}
+
+
+.form-item label:not(.checkboxLabel) {
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+}
+
+input[type='email'],
+input[type='text'],
+input[type='number'],
+input[type='password'] {
+    border: 1px solid black;
+    height: 55px;
+    padding: 0 2rem;
+    width: 100%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
+.checkbox1 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-color1);
+}
+
+.checkbox2 input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-color2);
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.button1{
+    background: linear-gradient(45deg, var(--primary-color1), var(--secondary-color1));
+}
+
+
+.button2{
+    background: linear-gradient(45deg, var(--secondary-color2), var(--primary-color2));
+}
+
+/*this part is for the styles when you have some errors*/
+.errorMessage {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*this part if for the new form of the data of the user*/
+.data-header {
+    margin-bottom: 30px;
+}
+
+.no-contra {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #6e6b6b;
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width:1350px) {
+    .login-left {
+        padding: 50px !important;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .login-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width:768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        grid-template-columns: auto;
+    }
+
+    .login-right {
+        display: none;
+    }
+
+    .icon {
+        margin-right: 0;      
+    }
+
+    .data-header {
+        margin-bottom: 20px;
+    }
+}
